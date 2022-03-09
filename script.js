@@ -39,16 +39,17 @@ const team = [
 
 let primoBlocco = "";
 
-for(let i = 0; i < team.length; i++){
+for(let i = 0; i <= 0; i++){
     console.log(team[i].name)
     console.log(team[i].role)
     console.log(team[i].image)
     primoBlocco += `
-        ${team[i].name}
-        ${team[i].role}
-        ${team[i].image}`
+    <div">
+        <img class="w-100 pb-3" src="img/${team[i].image}" alt="img-random">
+        <h3>${team[i].name}</h3>
+        <p>${team[i].role}</p>
+    </div>`
 }
 const primoBloccoWrapper = document.getElementById("primo-blocco");
-console.log(primoBloccoWrapper)
-primoBloccoWrapper.append(primoBlocco)
+primoBloccoWrapper.innerHTML += primoBlocco
 
