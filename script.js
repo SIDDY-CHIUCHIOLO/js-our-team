@@ -30,3 +30,12 @@ const team = [
         image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
+
+//MILESTONE 1:
+//stampare su console le informazioni di nome, ruolo e la stringa della foto
+//MILESTONE 2:
+//stampare le stesse informazioni su DOM sottoforma di stringhe
+
+console.log(team[0]);
+
+document.getElementById("prima-lista").innerHTML = team[0]
