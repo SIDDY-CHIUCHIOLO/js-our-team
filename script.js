@@ -36,6 +36,19 @@ const team = [
 //MILESTONE 2:
 //stampare le stesse informazioni su DOM sottoforma di stringhe
 
-console.log(team[0]);
 
-document.getElementById("prima-lista").innerHTML = team[0]
+let primoBlocco = "";
+
+for(let i = 0; i < team.length; i++){
+    console.log(team[i].name)
+    console.log(team[i].role)
+    console.log(team[i].image)
+    primoBlocco += `
+        ${team[i].name}
+        ${team[i].role}
+        ${team[i].image}`
+}
+const primoBloccoWrapper = document.getElementById("primo-blocco");
+console.log(primoBloccoWrapper)
+primoBloccoWrapper.append(primoBlocco)
+
